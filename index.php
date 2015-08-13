@@ -1,14 +1,15 @@
 <?php
-$braille_str = 
+$braille_str = <<<BRAILLE
 "O. O. O. O. O. .O O. O. O. OO
 OO .O O. O. .O OO .O OO O. .O
 .. .. O. O. O. .O O. O. O. ..";
+BRAILLE;
 
-$braille_str = 
-".O O. .O OO O. O. .O OO O. OO O. .O O. .O
-O. .O O. .. .. OO OO .. .. .. OO OO .O OO
-O. O. O. O. .. O. O. O. OO .. .. .O O. .O";
-
+$braille_str = <<<BRAILLE
+O. O. .O .O OO O. OO O. O. O. OO O.
+O. .O OO O. OO .O O. .O O. .. OO .O
+O. .. O. O. .. O. O. .. O. .. .. O.
+BRAILLE;
 
 $braille_table = [
 	'O.....' => "a",
@@ -17,6 +18,7 @@ $braille_table = [
 	'OO.O..' => "d",
 	'O..O..' => "e",
 	'OOO...' => "f",
+	'OOOO..' => "g",
 	'O.OO..' => "h",
 	'.OO...' => "i",
 	'.OOO..' => "j",
